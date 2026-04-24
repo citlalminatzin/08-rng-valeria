@@ -14,7 +14,7 @@ def play_change(n:int = 1000) -> float:
         elec_inicial = random.randint(0, 2)
         puertas = [i for i in range(3)
         if i != ganador and i != elec_inicial]
-        abierto = random.choices(puertas)
+        abierto = random.choice(puertas)
     
         nueva_opcion = [i for i in range(3)
         if i != elec_inicial and i != abierto][0]
